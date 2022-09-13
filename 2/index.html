@@ -3,15 +3,25 @@
 
 <head>
     <script src="https://code.jquery.com/jquery-git.js"></script>
-    <script> //Your Code Here </script>
+    <!-- When the button is pressed, a string should
+        populate inside of the text input field. -->
+    <script>
+        $(document).ready(function () {
+            $('#buttonName').click(function () {
+                $("#textBox:text").val("Ben");
+            })
+        })
+        
+    </script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">     
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
     <p>Please Input your Name:</p>
-    <input type="text" name="name">
+    <input id="textBox" type="text" name="name">
     <input id="buttonName" type="button" value="Click to set name" />
+
 </body>
 
 </html>
